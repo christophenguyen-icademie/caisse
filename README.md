@@ -1,27 +1,32 @@
 # Caisse
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+***Installation :***
 
-## Development server
+  **Depuis le code source :**
+    
+    Pré-requis : 
+    
+    Angular CLI >= 8.2.2
+    Node  >= 10.10.0
+    
+   - Téléchargez les sources dans le dossier de votre choix
+   - Rendez-vous à la racine du projet et exécutez
+     *npm install*
+     afin de récupérer l'ensemble des dépendances
+   - Exécutez le serveur en validant la commande 
+     *ng serve*
+   - Relevez l'url d'accès au site, par défaut et si le port est disponible : http://localhost:4200
+    
+  
+***A NOTER***
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+L'application utilise un échantillon d'articles fictifs à prendre parmi les références suivantes (saisir le code) :
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  { code: '92876189', nom: 'Pantalon Homme Fiji', prix: 39.90 },
+  { code: '92876276', nom: 'T-Shirt Homme Roly', prix: 19.90 },
+  { code: '92876234', nom: 'T-Shirt Homme Tobi', prix: 24.90 },
+  { code: '92876621', nom: 'Pull Homme Fiji', prix: 45.90 },
+  { code: '92876173', nom: 'Pantalon Femme City', prix: 39.90 },
+  { code: '92876243', nom: 'Débardeur Femme Mali', prix: 24.90 },
+  { code: '92876295', nom: 'T-Shirt Femme Roly', prix: 19.90 },
+  { code: '92876678', nom: 'Pull Femme Jacky', prix: 45.90 }
