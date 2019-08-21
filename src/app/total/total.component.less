@@ -1,0 +1,62 @@
+@width: 240px;
+@labelwidth: 120px;
+@headercolor:cornsilk;
+
+.divtotal
+{
+  display:flex;
+  flex-direction: column;
+  width:@width;
+  float:right;
+  margin-right:15px;
+
+  div {
+    height:25px;
+  }
+
+  .entete{
+    background-color:@headercolor;
+    padding-left:@labelwidth;
+    border-top:1px solid black;
+  }
+
+  .montants{
+    display: flex;
+    flex-direction: column;
+
+    .label{
+      background-color:@headercolor;
+      padding-left:5px;
+    }
+    .valeur{
+      padding-left:5px;
+    }
+
+    .montantht,.montanttva{
+      display:flex;
+      flex-direction: row;
+      border-top:1px solid black;
+
+      .label{
+        width:@labelwidth;
+      }
+    }
+    .montanttva .valeur{
+      color:gray;
+    }
+    .montantttc{
+      display:flex;
+      flex-direction: row;
+      border-top:1px solid black;
+      border-bottom:1px solid black;
+
+      .label{
+        width:120px;
+      }
+      .valeur{
+        font-size:large;
+        font-weight:bold;
+      }
+    }
+  }
+}

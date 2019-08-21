@@ -1,0 +1,43 @@
+div.lignearticle {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid black;
+  width:100%;
+
+  .codearticle
+  {
+    width:100px;
+    color:gray;
+  }
+
+  .designationarticle
+  {
+    margin-left:100px;
+    flex: 1 1 auto;
+  }
+
+  .prixarticle
+  {
+    margin-right:50px;
+  }
+
+  .supprimerarticle
+  {
+    cursor:pointer;
+  }
+}
+.listheader .lignearticle {
+  background-color:cornsilk;
+
+  height:40px;
+  border-top:1px solid black;
+
+  .codearticle
+  {
+    padding-left:5px;
+  }
+}

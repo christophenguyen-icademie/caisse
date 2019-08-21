@@ -1,0 +1,10 @@
+<h4>Articles à ajouter :</h4>
+<mat-form-field hintLabel="Saisir les 8 chiffres du code barre" class="saisiecodebarre">
+ <input (keypress)="input_onkeypress($event)" (input)="input_onSearchChange($event.target.value)" [(ngModel)]="filterName" name="filterName" matInput #input maxlength="8" placeholder="Saisir le code barre">
+<mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
+</mat-form-field>
+<div class="resultatrecherche" *ngIf="(articleselectionne$ )" >
+  <button mat-flat-button color="primary" class="contenuresultatrecherche" >{{(articleselectionne$ ).nom}} : {{(articleselectionne$ ).prix | number:'1.2-2'}} €</button><button mat-fab color="warn" class="ajouterresultatrecherche" (click)="button_onClick()" aria-label="Ajouter cet article">
+  <mat-icon>add</mat-icon>
+</button>
+</div>

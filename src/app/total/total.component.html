@@ -1,0 +1,35 @@
+<div *ngIf="(totalTTC>0)" class="composanttotal">
+  <h3>Total :</h3>
+  <div class="divtotal">
+    <div class="entete">
+      Total
+    </div>
+    <div class="montants">
+      <div class="montantht">
+        <div class="label">
+          H.T.
+        </div>
+        <div class="valeur">
+          {{totalHT | number:'1.2-2'}} €
+        </div>
+      </div>
+      <div class="montanttva">
+        <div class="label">
+          TVA (20%)
+        </div>
+        <div class="valeur">
+          {{totalTVA | number:'1.2-2'}} €
+        </div>
+      </div>
+      <div class="montantttc">
+        <div class="label">
+          TTC
+        </div>
+        <div class="valeur">
+          {{totalTTC | number:'1.2-2'}} €
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

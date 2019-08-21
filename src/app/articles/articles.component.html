@@ -1,0 +1,38 @@
+<h3>Caddie :</h3>
+<mat-nav-list role="list" color="Primary">
+  <mat-list-item role="listitem" class="listheader">
+    <div class="lignearticle">
+      <div class="codearticle">
+        Code
+      </div>
+      <div class="designationarticle">
+        Désignation
+      </div>
+      <div class="prixarticle">
+        Prix
+      </div>
+      <div class="entetevide">
+        <button mat-icon-button>
+        </button>
+      </div>
+    </div>
+  </mat-list-item>
+  <mat-list-item role="listitem" *ngFor="let article of articles">
+    <div class="lignearticle">
+      <div class="codearticle">
+        {{article.code}}
+      </div>
+      <div class="designationarticle">
+        {{article.nom}}
+      </div>
+      <div class="prixarticle">
+        {{article.prix| number:'1.2-2'}} €
+      </div>
+      <button mat-icon-button (click)="supprimeArticle(article)">
+        <mat-icon class="supprimerarticle" aria-hidden="false" aria-label="Supprimer l'article">clear</mat-icon>
+      </button>
+    </div>
+  </mat-list-item>
+</mat-nav-list>
+
+

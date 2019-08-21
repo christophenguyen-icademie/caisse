@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="example-spacer"></span>
+    <p class="label_caissier">Caisse ouverte par : </p>{{caisse.caissier}}
+    <mat-icon class="caissier-icone" aria-hidden="false" aria-label="Caissier connecté">account_box</mat-icon>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span class="nomboutique">
+      {{ caisse.boutique }}
+    </span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <div class='labeldate'>
+      {{today | date:'d MMMM y':'':'fr'}}
+    </div>
+    <div class='labelheure'>
+      {{today | date:'H:mm:ss':'':'fr'}}
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
