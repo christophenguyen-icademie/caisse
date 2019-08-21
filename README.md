@@ -1,5 +1,8 @@
 # Caisse
 
+Création d'un projet de caisse enregistreuse avec Angular CLI dans le cadre d'un devoir TED Master Expert Digital Architecture Web
+
+
 ***Installation :***
 
   **Depuis le code source :**
