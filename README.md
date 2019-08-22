@@ -20,6 +20,16 @@ Création d'un projet de caisse enregistreuse avec Angular CLI dans le cadre d'u
      *ng serve*
    - Relevez l'url d'accès au site, par défaut et si le port est disponible : http://localhost:4200
     
+  **Docker :**
+
+    Pré-requis : 
+    Docker (testé >= 19.03)
+    
+  - téléchargez l'image depuis le DockerHub : docker pull nguyenvanchristophe/caisse-enregistreuse
+
+  - exécutez un container avec par exemple la commande suivante : docker run -d -p 4200:4200 nguyenvanchristophe/caisse-enregistreuse
+
+  - le site est disponible à l'adresse : http://localhost:4200
   
 ***A NOTER***
 
